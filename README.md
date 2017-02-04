@@ -9,6 +9,7 @@ Created to show static mockup exported as images.
 - Pages are generated through a summary json file.
 - Auto hide of the navigation bar
 
+Generate a desc.json from desc.json.dist then:
+    
     yarn install
-    .. edit desc.json.dist ..
     node build.js
