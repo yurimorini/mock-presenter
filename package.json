@@ -1,0 +1,10 @@
+{
+  "name": "Mock Presenter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "twig": "^0.10.3"
+  }
+}

@@ -1,0 +1,7 @@
+.*
+node_modules/
+build-dist/
+images/
+
+!images/.gitkeep
+desc.json

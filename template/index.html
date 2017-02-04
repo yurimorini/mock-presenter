@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav__start">
+        <select class="nav__list"></select>
+      </div>
+      <div class="nav__links">
+        <a class="nav__button nav__button--prev" href="#">{{ prev }}</a>
+        <a class="nav__button nav__button--next" href="#">{{ next }}</a>
+      </div>
+    </div>
+    <ul class="pages">
+      {% for item in list %}
+      <li class="pages__page" data-name="{{ item.name }}">
+        <img class="pages__image" src="{{ destination ~ item.image }}" />
+      </li>
+      {% endfor %}
+    </ul>
+    <script src="nav.js" defer></script>
+  </body>
+</html>
